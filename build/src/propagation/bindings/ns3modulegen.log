@@ -1,0 +1,27 @@
+>>>>>>>>>>>>>>>> []
+/home/lena/ns-allinone-3.19/ns-3.19/bindings/python/ns3modulegen_core_customizations.py:70: DeprecationWarning: Typo: set_tranformation -> set_transformation
+  handler.set_tranformation(self, orig_ctype)
+/home/lena/ns-allinone-3.19/ns-3.19/src/propagation/bindings/modulegen__gcc_LP64.py:343: Warning: exception TypeLookupError(['std::_List_const_iterator< ns3::AttributeConstructionList::Item >'],) in wrapper public: retval? ???::Begin (params?) const;
+  is_const=True)
+/home/lena/ns-allinone-3.19/ns-3.19/src/propagation/bindings/modulegen__gcc_LP64.py:348: Warning: exception TypeLookupError(['std::_List_const_iterator< ns3::AttributeConstructionList::Item >'],) in wrapper public: retval? ???::End (params?) const;
+  is_const=True)
+/home/lena/ns-allinone-3.19/pybindgen-0.16.0.834/pybindgen/settings.py:84: DeprecationWarning: The option pybindgen.settings.deprecated_virtuals has not been set.  I am going to assume the value of False, change it to True if it breaks your APIs. The option will eventually disappear (the deprecated behaviour will eventually disappear).
+  DeprecationWarning)
+/home/lena/ns-allinone-3.19/ns-3.19/src/propagation/bindings/modulegen__gcc_LP64.py:488: Warning: exception TypeConfigurationError('Missing transfer_ownership option',) in wrapper public: retval? ???::Delete (params?);
+  is_static=True)
+/home/lena/ns-allinone-3.19/ns-3.19/src/propagation/bindings/modulegen__gcc_LP64.py:560: Warning: exception TypeLookupError(['ns3::Callback< ns3::ObjectBase *, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >'],) in wrapper public: retval? ???::GetConstructor (params?) const;
+  is_const=True)
+/home/lena/ns-allinone-3.19/ns-3.19/src/propagation/bindings/modulegen__gcc_LP64.py:639: Warning: exception TypeConfigurationError('Missing transfer_ownership option',) in wrapper public: retval? ???::LookupByHashFailSafe (params?);
+  is_static=True)
+bindings/python/ns3modulegen-modular.py:27: UserWarning: exception TypeLookupError(['short unsigned int'],) in wrapper None
+  warnings.warn("exception %r in wrapper %s" % (exception, wrapper))
+/home/lena/ns-allinone-3.19/ns-3.19/src/propagation/bindings/modulegen__gcc_LP64.py:1062: Warning: exception TypeLookupError(['ns3::RngStream *'],) in wrapper protected: retval? ???::Peek (params?) const;
+  is_const=True, visibility='protected')
+/home/lena/ns-allinone-3.19/ns-3.19/src/propagation/bindings/modulegen__gcc_LP64.py:2307: Warning: exception TypeLookupError(['std::complex< double >'],) in wrapper public: retval? ???::GetComplexGain (params?) const;
+  is_const=True)
+/home/lena/ns-allinone-3.19/ns-3.19/src/propagation/bindings/modulegen__gcc_LP64.py:2864: Warning: exception TypeLookupError(['ns3::Hash::Hash32Function_ptr'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x3359510>
+  cls.add_constructor([param('ns3::Hash::Hash32Function_ptr', 'hp')])
+/home/lena/ns-allinone-3.19/ns-3.19/src/propagation/bindings/modulegen__gcc_LP64.py:2881: Warning: exception TypeLookupError(['ns3::Hash::Hash64Function_ptr'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x335e4d0>
+  cls.add_constructor([param('ns3::Hash::Hash64Function_ptr', 'hp')])
+bindings/python/ns3modulegen-modular.py:27: UserWarning: exception CodeGenerationError('ns3::PropagationDelayModel cannot be constructed (class has pure virtual methods)',) in wrapper <pybindgen.CppClass 'ns3::PropagationDelayModel'>
+  warnings.warn("exception %r in wrapper %s" % (exception, wrapper))
