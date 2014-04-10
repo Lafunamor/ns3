@@ -7,12 +7,12 @@ using namespace ns3;
 
 int main (int argc, char *argv[]){
 
-Ptr<Helper> lteHelper = CreateObject<LteHelper>();
+Ptr<LteHelper> lteHelper = CreateObject<LteHelper> ();
 
 NodeContainer enbNodes;
 enbNodes.Create (1);
-NodeConationer ueNodes;
-ueNodes.Create(2);
+NodeContainer ueNodes;
+ueNodes.Create (2);
 
 MobilityHelper mobility;
 mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");
@@ -32,6 +32,5 @@ lteHelper->ActivateDataRadioBearer (ueDevs, bearer);
 Simulator::Stop (Seconds (0.005));
 Simulator::Run ();
 
-Simulator::Destroy ();
-return 0;
+
 }
