@@ -23,6 +23,7 @@ mobility.Install (ueNodes);
 NetDeviceContainer enbDevs;
 enbDevs = lteHelper->InstallEnbDevice (enbNodes);
 
+NetDeviceContainer ueDevs;
 lteHelper->Attach (ueDevs, enbDevs.Get (0));
 
 enum EpsBearer::Qci q = EpsBearer::GBR_CONV_VOICE;
