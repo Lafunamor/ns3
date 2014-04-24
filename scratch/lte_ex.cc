@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
      * lteHelper->SetSchedulerAttribute("nMux", UIntegerValue(yourvalue)); // the maximum number of UE selected by TD scheduler
      * lteHelper->SetSchedulerAttribute("PssFdSchedulerType", StringValue("CoItA")); // PF scheduler type in PSS
      */
-    lteHelper->SetSchedulerType("ns3::FdMtFfMacScheduler"); // FD-MT scheduler
+    //lteHelper->SetSchedulerType("ns3::FdMtFfMacScheduler"); // FD-MT scheduler
 
     NodeContainer enbNodes;
     enbNodes.Create(1);
