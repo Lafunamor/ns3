@@ -66,16 +66,20 @@ int main(int argc, char *argv[]) {
     enum EpsBearer::Qci q = EpsBearer::GBR_CONV_VOICE;
     EpsBearer bearer(q);
     lteHelper->ActivateDataRadioBearer(ueDevs, bearer);
-
+    
+    
+    Simulator::Stop(Seconds(0.015));
     // configure all the simulation scenario here...
 
+    
+    // output generating
     lteHelper->EnablePhyTraces();
     lteHelper->EnableMacTraces();
     lteHelper->EnableRlcTraces();
     lteHelper->EnablePdcpTraces();
 
 
-    Simulator::Stop(Seconds(0.005));
+    
     Simulator::Run();
 
 }
