@@ -531,7 +531,7 @@ LteHelper::InstallSingleEnbDevice (Ptr<Node> n)
 
   return dev;
 }
-LteHelper::GetLteEnbPhy(){
+Ptr<LteEnbPhy> LteHelper::GetLteEnbPhy(){
     return enbphy;
 }
 
