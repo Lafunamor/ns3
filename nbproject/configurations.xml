@@ -288,6 +288,7 @@
           <in>scratch-simulator-subdir.cc</in>
         </df>
         <in>input defaults.txt</in>
+        <in>lena-rem.cc</in>
         <in>lte_ex.cc</in>
         <in>myfirst.cc</in>
         <in>scratch-simulator.cc</in>
@@ -1762,6 +1763,7 @@
         <in>test-runner.cc</in>
       </df>
       <in>.gitignore</in>
+      <in>changes to stock ns3.txt</in>
       <in>commands.txt</in>
     </df>
     <logicalFolder name="ExternalFiles"
@@ -1979,6 +1981,8 @@
             ex="false"
             tool="1"
             flavor2="4">
+      </item>
+      <item path="changes to stock ns3.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="commands.txt" ex="false" tool="3" flavor2="0">
       </item>
@@ -3639,6 +3643,8 @@
         </ccTool>
       </folder>
       <item path="scratch/input defaults.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scratch/lena-rem.cc" ex="false" tool="1" flavor2="4">
       </item>
       <item path="scratch/lte_ex.cc" ex="false" tool="1" flavor2="4">
         <ccTool>

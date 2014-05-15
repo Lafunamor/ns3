@@ -384,6 +384,7 @@ LteHelper::InstallSingleEnbDevice (Ptr<Node> n)
   Ptr<LteSpectrumPhy> ulPhy = CreateObject<LteSpectrumPhy> ();
 
   Ptr<LteEnbPhy> phy = CreateObject<LteEnbPhy> (dlPhy, ulPhy);
+  ltephy = phy;
 
   Ptr<LteHarqPhy> harq = Create<LteHarqPhy> ();
   dlPhy->SetHarqPhyModule (harq);
@@ -529,6 +530,9 @@ LteHelper::InstallSingleEnbDevice (Ptr<Node> n)
     }
 
   return dev;
+}
+LteHelper::GetLteEnbPhy(){
+    return ltephy;
 }
 
 Ptr<NetDevice>

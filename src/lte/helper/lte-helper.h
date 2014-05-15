@@ -29,6 +29,7 @@
 #include <ns3/node.h>
 #include <ns3/node-container.h>
 #include <ns3/eps-bearer.h>
+#include <ns3/lte-enb-phy.h>
 #include <ns3/phy-stats-calculator.h>
 #include <ns3/phy-tx-stats-calculator.h>
 #include <ns3/phy-rx-stats-calculator.h>
@@ -60,7 +61,7 @@ public:
 
   static TypeId GetTypeId (void);
   virtual void DoDispose (void);
-
+  static Ptr<LteEnbPhy> enbphy;
 
   /** 
    * Set the EpcHelper to be used to setup the EPC network in
@@ -77,6 +78,11 @@ public:
    */
   void SetEpcHelper (Ptr<EpcHelper> h);
 
+  /**
+   * @return a pointer to the LteEnbPhy
+   */
+  Ptr<LteEnbPhy> GetLteEnbPhy();
+  
   /** 
    * 
    * 
