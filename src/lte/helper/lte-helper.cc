@@ -372,7 +372,7 @@ LteHelper::InstallUeDevice (NodeContainer c)
   return devices;
 }
 
-
+static Ptr<LteEnbPhy> enbphy;
 Ptr<NetDevice>
 LteHelper::InstallSingleEnbDevice (Ptr<Node> n)
 {
@@ -384,7 +384,7 @@ LteHelper::InstallSingleEnbDevice (Ptr<Node> n)
   Ptr<LteSpectrumPhy> ulPhy = CreateObject<LteSpectrumPhy> ();
 
   Ptr<LteEnbPhy> phy = CreateObject<LteEnbPhy> (dlPhy, ulPhy);
-  ltephy = phy;
+  enbphy = phy;
 
   Ptr<LteHarqPhy> harq = Create<LteHarqPhy> ();
   dlPhy->SetHarqPhyModule (harq);
@@ -532,7 +532,7 @@ LteHelper::InstallSingleEnbDevice (Ptr<Node> n)
   return dev;
 }
 LteHelper::GetLteEnbPhy(){
-    return ltephy;
+    return enbphy;
 }
 
 Ptr<NetDevice>
