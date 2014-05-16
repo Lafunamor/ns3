@@ -5,6 +5,7 @@
 #include <ns3/network-module.h>
 #include <ns3/mobility-module.h>
 #include <ns3/lte-module.h>
+#include <ns3/lte-helper.h>
 
 using namespace ns3;
 
@@ -66,7 +67,8 @@ int main(int argc, char *argv[]) {
     enum EpsBearer::Qci q = EpsBearer::GBR_CONV_VOICE;
     EpsBearer bearer(q);
     lteHelper->ActivateDataRadioBearer(ueDevs, bearer);
-    
+    Ptr<LteEnbPhy> enbphy = lteHelper->GetLteEnbPhy();
+    enbphy->SetMacChDelay(2);
     
     Simulator::Stop(Seconds(0.015));
     // configure all the simulation scenario here...
