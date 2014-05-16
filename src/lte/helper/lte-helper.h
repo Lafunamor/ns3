@@ -61,7 +61,7 @@ public:
 
   static TypeId GetTypeId (void);
   virtual void DoDispose (void);
-  static Ptr<LteEnbPhy> enbphy;
+  Ptr<LteEnbPhy> enbphy;
 
   /** 
    * Set the EpcHelper to be used to setup the EPC network in
@@ -81,7 +81,7 @@ public:
   /**
    * @return a pointer to the LteEnbPhy
    */
-  Ptr<LteEnbPhy> GetLteEnbPhy();
+  Ptr<LteEnbPhy> GetLteEnbPhy ();
   
   /** 
    * 

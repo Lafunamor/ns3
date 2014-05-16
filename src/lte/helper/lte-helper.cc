@@ -372,7 +372,6 @@ LteHelper::InstallUeDevice (NodeContainer c)
   return devices;
 }
 
-static Ptr<LteEnbPhy> enbphy;
 Ptr<NetDevice>
 LteHelper::InstallSingleEnbDevice (Ptr<Node> n)
 {
