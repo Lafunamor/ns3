@@ -12,11 +12,12 @@
         <group>
             <file>file:/E:/Adrian/Dokumente/Bachelorarbeit/ns3/src/lte/examples/lena-simple.cc</file>
             <file>file:/E:/Adrian/Dokumente/Bachelorarbeit/ns3/src/lte/wscript</file>
-            <file>file:/E:/Adrian/Dokumente/Bachelorarbeit/ns3/scratch/myfirst.cc</file>
             <file>file:/E:/Adrian/Dokumente/Bachelorarbeit/ns3/changes%20to%20stock%20ns3.txt</file>
             <file>file:/E:/Adrian/Dokumente/Bachelorarbeit/ns3/src/lte/helper/lte-helper.cc</file>
             <file>file:/E:/Adrian/Dokumente/Bachelorarbeit/ns3/src/lte/helper/lte-helper.h</file>
             <file>file:/E:/Adrian/Dokumente/Bachelorarbeit/ns3/scratch/lte_ex.cc</file>
+            <file>file:/E:/Adrian/Dokumente/Bachelorarbeit/ns3/src/lte/model/lte-enb-phy.h</file>
+            <file>file:/E:/Adrian/Dokumente/Bachelorarbeit/ns3/src/lte/examples/lena-simple-epc.cc</file>
         </group>
     </open-files>
 </project-private>
