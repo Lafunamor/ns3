@@ -49,22 +49,22 @@ main (int argc, char *argv[])
   double interPacketInterval = 100;
 
   // Command line arguments
-  CommandLine cmd;
-  cmd.AddValue("numberOfNodes", "Number of eNodeBs + UE pairs", numberOfNodes);
-  cmd.AddValue("simTime", "Total duration of the simulation [s])", simTime);
-  cmd.AddValue("distance", "Distance between eNBs [m]", distance);
-  cmd.AddValue("interPacketInterval", "Inter packet interval [ms])", interPacketInterval);
-  cmd.Parse(argc, argv);
+//  CommandLine cmd;
+//  cmd.AddValue("numberOfNodes", "Number of eNodeBs + UE pairs", numberOfNodes);
+//  cmd.AddValue("simTime", "Total duration of the simulation [s])", simTime);
+//  cmd.AddValue("distance", "Distance between eNBs [m]", distance);
+//  cmd.AddValue("interPacketInterval", "Inter packet interval [ms])", interPacketInterval);
+//  cmd.Parse(argc, argv);
 
   Ptr<LteHelper> lteHelper = CreateObject<LteHelper> ();
   Ptr<PointToPointEpcHelper>  epcHelper = CreateObject<PointToPointEpcHelper> ();
   lteHelper->SetEpcHelper (epcHelper);
 
-  ConfigStore inputConfig;
-  inputConfig.ConfigureDefaults();
+//  ConfigStore inputConfig;
+//  inputConfig.ConfigureDefaults();
 
   // parse again so you can override default values from the command line
-  cmd.Parse(argc, argv);
+//  cmd.Parse(argc, argv);
 
   Ptr<Node> pgw = epcHelper->GetPgwNode ();
 
@@ -180,6 +180,12 @@ main (int argc, char *argv[])
   p2ph.EnablePcapAll("lena-epc-first");
 
   Simulator::Stop(Seconds(simTime));
+  
+  lteHelper->EnablePhyTraces ();
+  lteHelper->EnableMacTraces ();
+  lteHelper->EnableRlcTraces ();
+  lteHelper->EnablePdcpTraces ();
+  
   Simulator::Run();
 
   /*GtkConfigStore config;
