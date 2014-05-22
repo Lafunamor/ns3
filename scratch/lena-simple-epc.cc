@@ -30,6 +30,7 @@
 #include "ns3/point-to-point-helper.h"
 #include "ns3/config-store.h"
 //#include "ns3/gtk-config-store.h"
+#include <iostream>
 
 using namespace ns3;
 
@@ -190,7 +191,7 @@ main (int argc, char *argv[])
   //uint8_t delay = 1500;
   //phy->SetMacChDelay (delay);
   uint8_t delay = phy->GetMacChDelay();
-  cout << delay;
+  std::cout << delay << std:enln;
   
   Simulator::Run();
 
