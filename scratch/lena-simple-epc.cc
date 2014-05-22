@@ -187,7 +187,10 @@ main (int argc, char *argv[])
   lteHelper->EnablePdcpTraces ();
   
   Ptr<LteEnbPhy> phy = lteHelper->GetLteEnbPhy();
-  phy->SetMacChDelay (1500);
+  //uint8_t delay = 1500;
+  //phy->SetMacChDelay (delay);
+  uint8_t delay = phy->GetMacChDelay();
+  cout << delay;
   
   Simulator::Run();
 
