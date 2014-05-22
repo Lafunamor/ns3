@@ -186,6 +186,9 @@ main (int argc, char *argv[])
   lteHelper->EnableRlcTraces ();
   lteHelper->EnablePdcpTraces ();
   
+  Ptr<LteEnbPhy> phy = lteHelper->GetLteEnbPhy();
+  phy->SetMacChDelay (uint8_t 1500000);
+  
   Simulator::Run();
 
   /*GtkConfigStore config;

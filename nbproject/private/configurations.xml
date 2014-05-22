@@ -1452,6 +1452,7 @@
         </df>
         <in>input defaults.txt</in>
         <in>lena-rem.cc</in>
+        <in>lena-simple-epc.cc</in>
         <in>lte_ex.cc</in>
         <in>myfirst.cc</in>
         <in>scratch-simulator.cc</in>
