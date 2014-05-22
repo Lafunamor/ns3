@@ -191,7 +191,7 @@ main (int argc, char *argv[])
   //uint8_t delay = 1500;
   //phy->SetMacChDelay (delay);
   uint8_t delay = phy->GetMacChDelay();
-  std::cout << delay << std:endl;
+  std::cout << delay << std::endl;
   
   Simulator::Run();
 
